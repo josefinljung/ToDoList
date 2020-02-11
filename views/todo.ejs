@@ -32,12 +32,14 @@
             <span>Added:</span> <%= todo.date%> 
         </div>
         
-        <span class="edit-button">
-            <a href="/update/<%=todo._id%>">Edit </a> 
-        </span>
-        <span class="delete-button">
-            <a href="/delete/<%=todo._id%>">Delete </a> 
-        </span>
+        <div class="todo-buttons">
+            <span class="edit-button">
+                <a href="/update/<%=todo._id%>">Edit </a> 
+            </span>
+            <span class="delete-button">
+                <a href="/delete/<%=todo._id%>">Delete </a> 
+            </span>
+        </div>
     </div>
     <% }) %>
 

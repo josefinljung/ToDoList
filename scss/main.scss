@@ -1,0 +1,92 @@
+
+body {
+    background-color: rgb(250, 164, 200);
+    font-family: Georgia;
+    color: black;
+
+    main {
+        text-align: center;
+
+        /*EDIT PAGE*/
+        .edit-form {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: red;
+            letter-spacing: 3.5px;
+        }
+    
+        /*TO DO PAGE*/
+        .mainheader{
+            font-size: 4rem;
+            font-weight: 600;
+            color: red;
+            letter-spacing: 3.5px;
+        }
+
+        .todoform {
+
+            .todoheader {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: red;
+                letter-spacing: 3.5px;
+            }
+
+            .todoinput {
+                width: 300px;
+                height: 30px;
+                margin-top: 3px;
+                border: 0.4px black solid;
+                border-radius: 50px;
+            }
+
+            button {
+                background-color: rgba(255, 255, 255, 0.445);
+                border: none;
+                border-radius: 25px;
+                padding: 10px;
+                font-family: Georgia;
+                text-transform: uppercase;
+                color: red;
+                }
+        }
+
+        .tododiv{
+            min-height: 100px;
+            max-width: 500px;
+            padding: 30px 0px 0px 0px;
+            border: 0.4px black solid;
+            border-radius: 50px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.445);
+            margin: 10px;
+
+            .added-priority, .added-todo, .added-date {
+                font-size: 1.5rem;
+                
+                span {
+                color: red;
+                font-weight: 600;
+                }           
+            }
+            .added-date {
+                font-size: 0.8rem;
+            }
+
+            /*.edit-button, .delete-button {
+                background-color: rgba(255, 255, 255, 0.63);
+                border: none;
+                border-radius: 25px;
+                padding: 10px;
+                font-family: Georgia;
+                text-transform: uppercase;
+                color: red;
+            }*/
+
+        }
+
+        /*EDIT PAGE*/
+
+
+    }
+}

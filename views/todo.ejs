@@ -1,0 +1,46 @@
+
+<%- include ("header.ejs") %>
+<main>
+    <h1 class="mainheader">My To Do List</h1>
+    <div class="todoform">
+        <form action="/createtodo" method="post">
+        <br>
+        <span class="todoheader">To Do:</span>
+        <br>
+        <input type="text" name="text" class="todoinput">
+        <br><br>
+        <span class="todoheader">Priority:</span>
+        <br>
+        <input type="text" name="prio" class="todoinput">
+        <br><br>
+        <button type="submit">ADD</button>
+        <br><br>
+        </form>
+    </div>
+    
+    <% todos.forEach( (todo)=>{ %>
+    <div class="tododiv">
+        <div>
+            <span class="added-todo">
+                <span>To do:</span> <%= todo.text%> 
+            </span>
+            <span class="added-priority">
+                <span>Priority:</span> <%= todo.prio%> 
+            </span>
+        </div>
+        <div class="added-date">
+            <span>Added:</span> <%= todo.date%> 
+        </div>
+        
+        <span class="edit-button">
+            <a href="/update/<%=todo._id%>">Edit </a> 
+        </span>
+        <span class="delete-button">
+            <a href="/delete/<%=todo._id%>">Delete </a> 
+        </span>
+    </div>
+    <% }) %>
+
+</main >
+</body>
+</html>

@@ -2,13 +2,12 @@
 <%- include ("header.ejs") %>
 <main>
     <h1 class="mainheader">My To Do List</h1>
-    <div class="todoform">
-        <form action="/createtodo" method="post">
-        <div class="todo-headerinput">
+        <form action="/createtodo" method="post" class="todoform">
+        <div class="todo-headerandinput">
             <span class="todoheader">To Do:</span>
             <input type="text" name="text" class="todoinput">
         </div>
-        <div class="todo-headerinput">
+        <div class="todo-headerandinput">
             <span class="todoheader">Priority:</span>
             <input type="text" name="prio" class="todoinput">
         </div>
@@ -16,7 +15,6 @@
             <button type="submit" class="addtodobutton">ADD</button>
         </div>
         </form>
-    </div>
     
     <% todos.forEach( (todo)=>{ %>
     <div class="tododiv">

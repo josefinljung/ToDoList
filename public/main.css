@@ -1,5 +1,5 @@
 body {
-  background-color: #faa4c8;
+  background-color: #ffbcd7;
   font-family: Georgia;
   color: black; }
   body main {
@@ -38,7 +38,8 @@ body {
         color: red; }
         body main .todoform .addtodobutton:hover {
           letter-spacing: 3px;
-          transition-duration: 0.5s; }
+          transition-duration: 0.5s;
+          transition-timing-function: ease-in-out; }
     body main .tododiv {
       min-height: 100px;
       max-width: 500px;

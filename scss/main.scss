@@ -36,11 +36,12 @@ body {
                 width: 300px;
                 height: 30px;
                 margin-top: 3px;
+                padding: 1px 5px 1px 5px;
                 border: 0.4px black solid;
                 border-radius: 50px;
             }
 
-            button {
+            .addtodobutton {
                 background-color: rgba(255, 255, 255, 0.445);
                 border: none;
                 border-radius: 25px;
@@ -48,6 +49,11 @@ body {
                 font-family: Georgia;
                 text-transform: uppercase;
                 color: red;
+
+                &:hover {
+                    letter-spacing: 3px;
+                    transition-duration: 0.5s;
+                }
                 }
         }
 
@@ -59,7 +65,8 @@ body {
             border-radius: 50px;
             text-align: center;
             background-color: rgba(255, 255, 255, 0.445);
-            margin: 10px;
+            margin: auto;
+            margin-top: 10px;
 
             .added-priority, .added-todo, .added-date {
                 font-size: 1.5rem;
@@ -71,13 +78,27 @@ body {
             }
             .added-date {
                 font-size: 0.8rem;
+                margin-top: 5px;
             }
 
             .todo-buttons {
-                padding-top: 16px;
+                padding-top: 10px;
 
+                .edit-button, .delete-button {
+                    margin: 5px;
+                    
+                    a {
+                        font-family: Georgia;
+                        color: black;
+                        font-size: 0.9rem;
+                        font-weight: 600;
+                        
+                        &:hover {
+                            color: rgb(252, 48, 48);
+                        }
+                    }
+                }
             }
-
         }
 
         /*EDIT PAGE*/

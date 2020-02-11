@@ -3,14 +3,15 @@ body {
     background-color: rgb(255, 188, 215);
     font-family: Georgia;
     color: black;
+    margin: 0px;
 
     main {
 
         text-align: center;
 
-        /*TO DO PAGE*/
+        /* TO DO PAGE */
         .mainheader{
-            font-size: 4rem;
+            font-size: 5rem;
             font-weight: 600;
             color: red;
             letter-spacing: 3.5px;
@@ -34,12 +35,13 @@ body {
                 width: 300px;
                 height: 30px;
                 padding: 1px 5px 1px 5px;
-                border: 0.4px black solid;
+                border: none;
                 border-radius: 50px;
             }
 
             .addtodobutton {
                 background-color: rgba(255, 255, 255, 0.445);
+                width: 70px;
                 border: none;
                 border-radius: 25px;
                 padding: 10px;
@@ -60,7 +62,7 @@ body {
             min-height: 100px;
             max-width: 500px;
             padding: 30px 0px 0px 0px;
-            border: 0.4px black solid;
+            border: none;
             border-radius: 50px;
             text-align: center;
             background-color: rgba(255, 255, 255, 0.445);
@@ -101,14 +103,14 @@ body {
             }
         }
 
-        /*EDIT PAGE*/
+        /* EDIT PAGE */
         .edit-form {
 
             .editinput {
                 width: 300px;
                 height: 30px;
                 padding: 1px 5px 1px 5px;
-                border: 0.4px black solid;
+                border: none;
                 border-radius: 50px;
             }
 
@@ -134,5 +136,23 @@ body {
         }
 
 
+    }
+    /* FOOTER */
+    footer {
+        .footer-date {
+            padding: 10px 0px 5px 0px;
+        }
+
+        .footer-name {
+            padding: 0px 0px 10px 0px;
+        }
+
+        width: 100%;
+        background-color: rgb(252, 212, 228);
+        margin-top: 100px;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 900;
+        color: red;
     }
 }

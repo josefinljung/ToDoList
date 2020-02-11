@@ -5,13 +5,13 @@
         <form action="/update/:id" method="post">
 
             <span class="edit-todo">To do:</span>
-            <input type="text" name="text" value="<%=response.text%>">
+            <input type="text" name="text" class="editinput" value="<%=response.text%>">
             
             <span class="edit-todo">Priority:</span>
-            <input type="text" name="prio" value="<%=response.prio%>">
+            <input type="text" name="prio" class="editinput" value="<%=response.prio%>">
 
             <input type="text" name="id" value="<%=response._id%>" hidden>
-            <button type="submit">Update</button>
+            <button type="submit" class="updatebutton">Update</button>
 
         </form>
     </div>

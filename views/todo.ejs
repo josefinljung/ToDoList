@@ -4,17 +4,17 @@
     <h1 class="mainheader">My To Do List</h1>
     <div class="todoform">
         <form action="/createtodo" method="post">
-        <br>
-        <span class="todoheader">To Do:</span>
-        <br>
-        <input type="text" name="text" class="todoinput">
-        <br><br>
-        <span class="todoheader">Priority:</span>
-        <br>
-        <input type="text" name="prio" class="todoinput">
-        <br><br>
-        <button type="submit" class="addtodobutton">ADD</button>
-        <br><br>
+        <div class="todo-headerinput">
+            <span class="todoheader">To Do:</span>
+            <input type="text" name="text" class="todoinput">
+        </div>
+        <div class="todo-headerinput">
+            <span class="todoheader">Priority:</span>
+            <input type="text" name="prio" class="todoinput">
+        </div>
+        <div>
+            <button type="submit" class="addtodobutton">ADD</button>
+        </div>
         </form>
     </div>
     

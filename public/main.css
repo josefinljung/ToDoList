@@ -11,21 +11,41 @@ body {
       font-size: 1.5rem;
       font-weight: 600;
       color: red;
-      letter-spacing: 3.5px; }
+      letter-spacing: 3.5px;
+      margin-top: 50px; }
+      body main .edit-form .editinput {
+        width: 300px;
+        height: 30px;
+        padding: 1px 5px 1px 5px;
+        border: 0.4px black solid;
+        border-radius: 50px; }
+      body main .edit-form .updatebutton {
+        display: block;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.445);
+        border: none;
+        border-radius: 25px;
+        padding: 10px;
+        margin-top: 70px;
+        font-family: Georgia;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: red; }
     body main .mainheader {
       font-size: 4rem;
       font-weight: 600;
       color: red;
       letter-spacing: 3.5px; }
+    body main .todoform .todo-headerinput {
+      margin-top: 10px; }
     body main .todoform .todoheader {
       font-size: 1.5rem;
       font-weight: 600;
       color: red;
-      letter-spacing: 3.5px; }
+      letter-spacing: 3px; }
     body main .todoform .todoinput {
       width: 300px;
       height: 30px;
-      margin-top: 3px;
       padding: 1px 5px 1px 5px;
       border: 0.4px black solid;
       border-radius: 50px; }
@@ -34,7 +54,9 @@ body {
       border: none;
       border-radius: 25px;
       padding: 10px;
+      margin-top: 10px;
       font-family: Georgia;
+      font-weight: 600;
       text-transform: uppercase;
       color: red; }
       body main .todoform .addtodobutton:hover {
@@ -49,7 +71,7 @@ body {
       text-align: center;
       background-color: rgba(255, 255, 255, 0.445);
       margin: auto;
-      margin-top: 10px; }
+      margin-top: 20px; }
       body main .tododiv .added-priority, body main .tododiv .added-todo, body main .tododiv .added-date {
         font-size: 1.5rem; }
         body main .tododiv .added-priority span, body main .tododiv .added-todo span, body main .tododiv .added-date span {

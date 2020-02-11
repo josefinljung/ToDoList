@@ -9,10 +9,34 @@ body {
 
         /*EDIT PAGE*/
         .edit-form {
+
+            .editinput {
+                width: 300px;
+                height: 30px;
+                padding: 1px 5px 1px 5px;
+                border: 0.4px black solid;
+                border-radius: 50px;
+            }
+
+            .updatebutton {
+                display: block;
+                margin: auto;
+                background-color: rgba(255, 255, 255, 0.445);
+                border: none;
+                border-radius: 25px;
+                padding: 10px;
+                margin-top: 70px;
+                font-family: Georgia;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: red;
+            }
+
             font-size: 1.5rem;
             font-weight: 600;
             color: red;
             letter-spacing: 3.5px;
+            margin-top: 50px;
         }
     
         /*TO DO PAGE*/
@@ -24,18 +48,21 @@ body {
         }
 
         .todoform {
+            
+            .todo-headerinput {
+                margin-top: 10px;
+            }
 
             .todoheader {
                 font-size: 1.5rem;
                 font-weight: 600;
                 color: red;
-                letter-spacing: 3.5px;
+                letter-spacing: 3px;
             }
 
             .todoinput {
                 width: 300px;
                 height: 30px;
-                margin-top: 3px;
                 padding: 1px 5px 1px 5px;
                 border: 0.4px black solid;
                 border-radius: 50px;
@@ -46,14 +73,16 @@ body {
                 border: none;
                 border-radius: 25px;
                 padding: 10px;
+                margin-top: 10px;
                 font-family: Georgia;
+                font-weight: 600;
                 text-transform: uppercase;
                 color: red;
 
-                &:hover {
-                    letter-spacing: 3px;
-                    transition-duration: 0.5s;
-                }
+                    &:hover {
+                        letter-spacing: 3px;
+                        transition-duration: 0.5s;
+                    }
                 }
         }
 
@@ -66,7 +95,7 @@ body {
             text-align: center;
             background-color: rgba(255, 255, 255, 0.445);
             margin: auto;
-            margin-top: 10px;
+            margin-top: 20px;
 
             .added-priority, .added-todo, .added-date {
                 font-size: 1.5rem;
@@ -76,6 +105,7 @@ body {
                 font-weight: 600;
                 }           
             }
+            
             .added-date {
                 font-size: 0.8rem;
                 margin-top: 5px;

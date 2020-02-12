@@ -7,14 +7,20 @@ const router = express.Router();
 //skapa todo-data och visa det sedan i todo router
 router.post("/createtodo", async (req, res) => {
     const todos = new Todo({text: req.body.text, prio: req.body.prio});
-    const response = await todos.save();
-    res.redirect("/todo");
-});
+    const response = await todos.save((error, success)=>{
+        if 
+            (error){error? res.send(error.message): res.redirect("/todo")
+        }
+        else
+        res.redirect("/todo");
+        })
+    });
+
 
 //för att kunna se data
 router.get("/todo", async (req, res) => {
     
-    //sortera efter prio/date (skriv in /?sort=-1 eller /?sort=1 i url)
+    //sortera efter prio
     console.log(req.query)
     const sorted = req.query.sort;
     const todos = await Todo.find().sort({prio:sorted});
@@ -40,7 +46,8 @@ router.route("/update/:id")
 .post(async(req, res)=>{
     //updateOne för att kunna editera kommentarer
    await Todo.updateOne({_id:req.body.id}, 
-    {$set: {text:req.body.text, prio:req.body.prio}})
+    {$set: {text:req.body.text, prio:req.body.prio}},
+    {runValidators:true}, (error) => error? res.send(error.message):res.redirect("/todo"))
     console.log(req.body);
     res.redirect("/todo")
 });

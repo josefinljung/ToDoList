@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 //schema
 const schemaTodo = new mongoose.Schema(
     {
-        text: {type:String, required:true}, 
+        text: {type:String, minlength: 3, required:true}, 
         date: {type:Date, default: Date.now},
         prio: {type:String, required:true}
     }

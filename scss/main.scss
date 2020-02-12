@@ -126,6 +126,11 @@ body {
                 font-weight: 600;
                 text-transform: uppercase;
                 color: red;
+                
+                &:hover {
+                    letter-spacing: 3px;
+                    transition-duration: 0.5s;
+                }
             }
 
             font-size: 1.5rem;

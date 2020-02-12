@@ -95,6 +95,9 @@ body {
         font-weight: 600;
         text-transform: uppercase;
         color: red; }
+        body main .edit-form .updatebutton:hover {
+          letter-spacing: 3px;
+          transition-duration: 0.5s; }
   body footer {
     width: 100%;
     background-color: #fcd4e4;

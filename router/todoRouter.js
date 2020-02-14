@@ -48,8 +48,13 @@ router.route("/update/:id")
    await Todo.updateOne({_id:req.body.id}, 
     {$set: {text:req.body.text, prio:req.body.prio}},
     {runValidators:true}, (error) => error? res.send(error.message):res.redirect("/todo"))
-    console.log(req.body);
-    res.redirect("/todo")
+    // console.log(req.body);
+    // res.redirect("/todo")
+});
+
+
+router.get("/about", (req, res) => {
+    res.send("This to do app was created by Josefin")
 });
 
 //exporterar router ovan

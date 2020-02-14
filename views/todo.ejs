@@ -5,11 +5,11 @@
         <form action="/createtodo" method="post" class="todoform">
         <div class="todo-headerandinput">
             <span class="todoheader">To Do:</span>
-            <input type="text" name="text" class="todoinput">
+            <input type="text" name="text" class="todoinput" id="mytodoinput">
         </div>
         <div class="todo-headerandinput">
             <span class="todoheader">Priority:</span>
-            <input type="text" name="prio" class="todoinput">
+            <input type="text" name="prio" class="todoinput" id="mypriorityinput">
         </div>
         <div>
             <button type="submit" class="addtodobutton">ADD</button>
@@ -29,8 +29,7 @@
         <div class="added-date">
             <span>Added:</span> <%= todo.date%> 
         </div>
-        
-        <div class="todo-buttons">
+                <div class="todo-buttons">
             <span class="edit-button">
                 <a href="/update/<%=todo._id%>"><i class="fa fa-pencil" aria-hidden="true"></i></a> 
             </span>

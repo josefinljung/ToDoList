@@ -3,8 +3,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 //importera sass
-
 const sassMiddleware = require("node-sass-middleware");
+
 //importera router
 const todoRouter = require("./router/todoRouter");
 
@@ -43,3 +43,5 @@ mongoose.connect(config.databaseURL, options).then(()=> {
     //lyssnar till lokal port 8001)
     app.listen(8001);
 }); 
+
+module.exports = app

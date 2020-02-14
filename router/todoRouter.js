@@ -1,10 +1,8 @@
 const express = require("express");
 
-//importerar Todo-funktionen med sitt mongoose-schema från todo.js-filen
 const Todo = require("../model/todo");
 const router = express.Router();
 
-//skapa todo-data och visa det sedan i todo router
 router.post("/createtodo", async (req, res) => {
     const todos = new Todo({text: req.body.text, prio: req.body.prio});
     const response = await todos.save((error, success)=>{
@@ -16,19 +14,14 @@ router.post("/createtodo", async (req, res) => {
         })
     });
 
-
-//för att kunna se data
 router.get("/todo", async (req, res) => {
     
-    //sortera efter prio
     console.log(req.query)
     const sorted = req.query.sort;
     const todos = await Todo.find().sort({prio:sorted});
-    //laddar min ejs-fil och kör tillsammans med objektet todos
     res.render("todo", {todos: todos});
 });
 
-//för att kunna ta bort kommentarer
 router.get("/delete/:id", async (req, res)=>{
     console.log(req.params.id);
     await Todo.deleteOne({_id:req.params.id});
@@ -44,18 +37,13 @@ router.route("/update/:id")
 })
 
 .post(async(req, res)=>{
-    //updateOne för att kunna editera kommentarer
    await Todo.updateOne({_id:req.body.id}, 
     {$set: {text:req.body.text, prio:req.body.prio}},
     {runValidators:true}, (error) => error? res.send(error.message):res.redirect("/todo"))
-    // console.log(req.body);
-    // res.redirect("/todo")
 });
-
 
 router.get("/about", (req, res) => {
     res.send("This to do app was created by Josefin")
 });
 
-//exporterar router ovan
 module.exports = router;

@@ -1,0 +1,112 @@
+body {
+  background-color: #ffbcd7;
+  font-family: Georgia;
+  color: black;
+  margin: 0px;
+  /* FOOTER */ }
+  body main {
+    text-align: center;
+    /* TO DO PAGE */
+    /* EDIT PAGE */ }
+    body main .mainheader {
+      font-size: 5rem;
+      font-weight: 600;
+      color: red;
+      letter-spacing: 3.5px; }
+    body main .todoform {
+      margin-bottom: 40px; }
+      body main .todoform .todo-headerandinput {
+        margin-top: 10px; }
+      body main .todoform .todoheader {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: red;
+        letter-spacing: 3px; }
+      body main .todoform .todoinput {
+        width: 300px;
+        height: 30px;
+        padding: 1px 5px 1px 5px;
+        border: none;
+        border-radius: 50px; }
+      body main .todoform .addtodobutton {
+        background-color: rgba(255, 255, 255, 0.445);
+        width: 70px;
+        border: none;
+        border-radius: 25px;
+        padding: 10px;
+        margin-top: 10px;
+        font-family: Georgia;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: red; }
+        body main .todoform .addtodobutton:hover {
+          letter-spacing: 3px;
+          transition-duration: 0.5s; }
+    body main .tododiv {
+      min-height: 100px;
+      max-width: 500px;
+      padding: 30px 0px 0px 0px;
+      border: none;
+      border-radius: 50px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.445);
+      margin: auto;
+      margin-top: 20px; }
+      body main .tododiv .added-priority, body main .tododiv .added-todo, body main .tododiv .added-date {
+        font-size: 1.5rem; }
+        body main .tododiv .added-priority span, body main .tododiv .added-todo span, body main .tododiv .added-date span {
+          color: red;
+          font-weight: 600; }
+      body main .tododiv .added-date {
+        font-size: 0.8rem;
+        margin-top: 5px; }
+      body main .tododiv .todo-buttons {
+        padding-top: 10px; }
+        body main .tododiv .todo-buttons .edit-button, body main .tododiv .todo-buttons .delete-button {
+          margin: 5px; }
+          body main .tododiv .todo-buttons .edit-button a, body main .tododiv .todo-buttons .delete-button a {
+            font-family: Georgia;
+            color: black;
+            font-size: 0.9rem;
+            font-weight: 600; }
+            body main .tododiv .todo-buttons .edit-button a:hover, body main .tododiv .todo-buttons .delete-button a:hover {
+              color: #fc3030; }
+    body main .edit-form {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: red;
+      letter-spacing: 3.5px;
+      margin-top: 50px; }
+      body main .edit-form .editinput {
+        width: 300px;
+        height: 30px;
+        padding: 1px 5px 1px 5px;
+        border: none;
+        border-radius: 50px; }
+      body main .edit-form .updatebutton {
+        display: block;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.445);
+        border: none;
+        border-radius: 25px;
+        padding: 10px;
+        margin-top: 70px;
+        font-family: Georgia;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: red; }
+        body main .edit-form .updatebutton:hover {
+          letter-spacing: 3px;
+          transition-duration: 0.5s; }
+  body footer {
+    width: 100%;
+    background-color: #fcd4e4;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: red; }
+    body footer .footer-date {
+      padding: 10px 0px 5px 0px; }
+    body footer .footer-name {
+      padding: 0px 0px 10px 0px; }
